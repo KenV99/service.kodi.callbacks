@@ -42,7 +42,7 @@ class Events(object):
                         'episode', 'showtitle', 'percentPlayed'],
             'varArgs': {'%mt': 'mediaType', '%fn': 'fileName', '%ti': 'title', '%ar': 'aspectRatio', '%ht': 'height',
                         '%wi': 'width', '%sm': 'stereomode', '%se': 'season', '%ep': 'episode', '%st': 'showtitle',
-                        '%at': 'artist', '%al': 'album'},
+                        '%at': 'artist', '%al': 'album', '%pp': 'percentPlayed'},
             'expArgs': {'mediaType': 'movie', 'fileName': 'G:\\movies\\Star Wars - Episode IV\\movie.mkv',
                         'title': 'Star Wars Episode IV - A New Hope', 'percentPlayed': '26'}
         },
