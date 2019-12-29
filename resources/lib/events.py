@@ -24,7 +24,7 @@ def requires_subtopic():
 
 class Events(object):
     Player = {
-        'onPlayBackStarted': {
+        'onAVStarted': {
             'text': 'on Playback Started',
             'reqInfo': [],
             'optArgs': ['mediaType', 'fileName', 'title', 'aspectRatio', 'width', 'height', 'stereomode', 'season',
