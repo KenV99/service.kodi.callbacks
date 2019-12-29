@@ -327,7 +327,7 @@ class Player(xbmc.Player):
             vr = u'unknown'
         return str(vr)
 
-    def onPlayBackStarted(self):
+    def onAVStarted(self):
         self.getInfo()
         try:
             self.totalTime = self.getTotalTime()
@@ -336,7 +336,7 @@ class Player(xbmc.Player):
         finally:
             if self.totalTime == 0:
                 self.totalTime = -1
-        topic = Topic('onPlayBackStarted')
+        topic = Topic('onAVStarted')
         self.publish(Message(topic, **self.info))
 
     def onPlayBackEnded(self):
