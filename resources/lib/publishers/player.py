@@ -266,7 +266,7 @@ class Player(xbmc.Player):
             try:
                 playerid = player['result'][0]['playerid']
                 playertype = player['result'][0]['type']
-            except KeyError:
+            except (KeyError, IndexError):
                 playerid = -1
                 playertype = 'none'
         if playertype == 'audio':
